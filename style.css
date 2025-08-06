@@ -1,0 +1,116 @@
+
+        body {
+        
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0; 
+            background-color: #f0f8ff; 
+        }
+
+        .container {
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center;
+
+            /* Enhancing our UI */
+            background-color: #b8fff7; 
+            border: 1px solid #cce7ff; 
+            border-radius: 15px; 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+            padding: 40px; 
+            max-width: 600px; 
+            width: 90%; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            color: #333; 
+            text-align: center; 
+        }
+
+        .container h1 {
+            color: #007bff; 
+            margin-bottom: 25px; 
+            font-size: 2.5rem; 
+        }
+
+        .button-group {
+            display: flex; 
+            gap: 15px; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+        }
+
+        .button-group .btn {
+            padding: 12px 25px; 
+            font-size: 1.1rem; 
+            border-radius: 8px;
+            min-width: 120px; 
+        }
+
+        .btn-dark{
+            background-color: hsl(55, 95%, 67%);
+           /* color: white;*/
+        }
+
+        .btn-dark:hover{
+            background-color: hsl(55, 95%, 47%);
+           /* color: white;*/
+        }
+
+        .btn-danger{
+            background-color: hsl(90, 94%, 50%);
+           /* color: white;*/
+        }
+
+        .btn-danger:hover{
+            background-color: hsl(90, 94%, 37%);
+           /* color: white;*/
+        }
+
+        .btn-info{
+            background-color: hsl(180, 89%, 50%);
+           /* color: white;*/
+        }
+
+        .btn-info:hover{
+            background-color: hsl(180, 89%, 40%);
+           /* color: white;*/
+        }
+
+        .btn-success{
+            background-color: hsla(0, 0%, 84%, 0.693);
+           /* color: white;*/
+        }
+
+        .btn-success:hover{
+            background-color: hsl(0, 0%, 74%, 0.693);
+           /* color: white;*/
+        }
+
+
+    /*for making it responsive*/
+    @media(max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 95%;
+    }
+
+    .container h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button-group .btn {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+

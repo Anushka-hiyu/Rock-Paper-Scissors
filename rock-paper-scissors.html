@@ -1,0 +1,28 @@
+<!--This is a basic implementation of the rock, paper and scissors game. For a basic JavaScript project, you can go for it.-->>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>!Rock Paper Scissors!</h1>
+        <div class="button-group">
+            <button type="button" class="btn btn-info" onclick="playerGame('rock');">Rock</button>
+            <button type="button" class="btn btn-danger" onclick="playerGame('paper');">Paper</button>
+            <button type="button" class="btn btn-dark" onclick="playerGame('scissors');">Scissors</button>
+            <button type="button" class="btn btn-success" onclick="
+            score.wins = 0;
+            score.losses = 0;
+            score.ties = 0;
+            localStorage.removeItem('score');
+            ">Reset Score</button>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
